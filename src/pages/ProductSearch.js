@@ -11,7 +11,7 @@ function ProductSearch() {
   const [isLoading, setIsLoading] = useState("");
   const [page, setPage] = useState(1);
 
-  const pages = Math.floor(products.length / 8) + 1;
+  const pages = products.length === 8 ? 1 : Math.floor(products.length / 8) + 1;
   const startItem = 0 + 8 * (page - 1);
   const endItem = 8 + 8 * (page - 1);
 

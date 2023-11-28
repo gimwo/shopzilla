@@ -11,7 +11,7 @@ function Category() {
   const [isLoading, setIsLoading] = useState("");
   const [page, setPage] = useState(1);
 
-  const pages = Math.floor(products.length / 8) + 1;
+  const pages = products.length === 8 ? 1 : Math.floor(products.length / 8) + 1;
   const startItem = 0 + 8 * (page - 1);
   const endItem = 8 + 8 * (page - 1);
 
@@ -100,7 +100,7 @@ function Category() {
               />
             </div>
           ) : (
-            <div className="bg-search d-flex justify-content-center align-items-center p-4">
+            <div className="bg-search d-flex justify-content-start align-items-center p-4">
               <div className="d-flex flex-row flex-wrap gap-1 justify-content-start">
                 {products.error ? (
                   <h4 className=" text-center p-5">
