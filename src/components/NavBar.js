@@ -47,8 +47,8 @@ function NavBar() {
   return (
     <nav className="sticky-top pb-0">
       <div className="bg-success text-center text-white">
-        Enjoy up to 4.509l0% off on all the latest deals in our GRANDEST
-        Christmas sale yet! Add to cart now!!
+        Enjoy up to 50% off on all the latest deals in our GRANDEST Christmas
+        sale yet! Add to cart now!!
       </div>
       <Container fluid className="mx-0 px-0">
         <div className="nav-bar">
